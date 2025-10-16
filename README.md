@@ -1,3 +1,5 @@
+# My first feature
+
 # Student Data Management System Lab
 
 ## Learning Goals
@@ -34,21 +36,25 @@ This lab will help you apply Python **data structures** to solve real-world prob
 ### Install Dependencies
 
 Ensure **Python** is installed:
+
 ```sh
 python --version
 ```
 
 Run the following command to install dependencies:
+
 ```sh
 pipenv install
 ```
 
 Run the following to enter the virtual environment:
+
 ```sh
 pipenv shell
 ```
 
 To run the test suite, use:
+
 ```sh
 pytest -x
 ```
@@ -77,6 +83,7 @@ The **Student Data Management System** will be built using structured data handl
 - **Sets**: Track unique student data attributes such as completed courses and enrolled majors.
 
 #### Design Breakdown:
+
 - **Student list storage** using **tuples** and **lists**.
 - **Filtering capabilities** using **list comprehensions**.
 - **Memory-efficient data handling** with **generator expressions**.
@@ -112,6 +119,7 @@ of students given a major using a list comprehension.
 #### Step 3: Displaying Student Data
 
 In `data_processing.py`, edit the `format_student_data` function to return a string for a given student formatted like:
+
 ```python
 "ID: 10 | Name: Louis Medina | Major: Computer Science"
 ```
@@ -125,6 +133,7 @@ details using the `format_student_data` function.
 
 In `set_operations.py`, edit the `unique_majors` function to return a set of unique student
 majors using set comprehension. For example, given a list of students like:
+
 ```python
 [
     (101, "Miles", "Mathematics"),
@@ -134,7 +143,9 @@ majors using set comprehension. For example, given a list of students like:
     (105, "Nadia", "Mathematics"),
 ]
 ```
+
 the `unique_majors` function should return (in no particular order):
+
 ```python
 {"Mathematics", "Physics"}
 ```
@@ -151,7 +162,6 @@ for all students by major. Example of a generator expression:
 number_list = [1,2,3,4,5,6]
 generator_expression = (n * 2 for n in number_list if n > 3)
 ```
-
 
 ---
 
